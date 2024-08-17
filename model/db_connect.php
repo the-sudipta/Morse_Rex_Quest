@@ -2,9 +2,9 @@
 function db_conn()
 {
     $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "morse_rex_quest";
+    $username = "u899200555_morse_message";
+    $password = "Morse_Message#1";
+    $dbname = "u899200555_morse_message";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
