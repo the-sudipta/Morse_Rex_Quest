@@ -20,8 +20,8 @@ if (http_response_code() == 500) {
  exit();
 }
 session_start();
-$login_page = $frontend_routes['game'];
-navigate($login_page);
+$game_page = $frontend_routes['game'];
+navigate($game_page);
 
 
 ?>
