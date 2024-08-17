@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /Morse_Rex_Quest/
+
+# If the requested file does not exist, rewrite to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]
