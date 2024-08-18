@@ -1,7 +1,7 @@
 https://www.electronics-notes.com/articles/ham_radio/morse_code/characters-table-chart.php
 
 
-Morse Code Database :
+Morse Code Database Below:
 $morseCodeMap = [
     // Uppercase Letters
     'A' => '.-',    'B' => '-...',  'C' => '-.-.',  'D' => '-..',   'E' => '.',
