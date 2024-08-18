@@ -115,7 +115,7 @@ function getCactusCreationInterval() {
 
 function fetchMorseCode(callback) {
   const xhr = new XMLHttpRequest();
-  xhr.open('GET', '/utils/Morse_Code_Generator.php', true); // Updated path
+  xhr.open('GET', 'utils/Morse_Code_Generator.php', true); // Updated path
   xhr.onload = function() {
     if (xhr.status >= 200 && xhr.status < 300) {
       const data = JSON.parse(xhr.responseText);
