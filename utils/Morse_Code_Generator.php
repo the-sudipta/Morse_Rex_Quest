@@ -1,12 +1,15 @@
 <?php
 require_once __DIR__ . '/../model/CommunicationRepo.php';
 
+$message = null;
 // Fetch the message from the database
 $message = findOneWayMessageByID(1);
 
 if ($message === null) {
     $message = "Hi! How are you?";
 }
+
+error_log("Fetched Message: " . $message); // Debugging line
 
 // Morse Code Mapping
 $morseCodeMap = [
