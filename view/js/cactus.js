@@ -114,21 +114,21 @@ function getCactusCreationInterval() {
 }
 
 function fetchMorseCode(callback) {
-  const xhr = new XMLHttpRequest()
-  xhr.open('GET', '/utils/Morse_Code_Generator.php', true) // Updated path
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', '/utils/Morse_Code_Generator.php', true); // Updated path
   xhr.onload = function() {
     if (xhr.status >= 200 && xhr.status < 300) {
-      const data = JSON.parse(xhr.responseText)
+      const data = JSON.parse(xhr.responseText);
       console.log('Fetched Morse Code:', data.morseCode); // Debugging line
-      callback(data.morseCode || '')
+      callback(data.morseCode || '');
     } else {
-      console.error('Failed to fetch Morse code:', xhr.statusText)
-      callback('')
+      console.error('Failed to fetch Morse code:', xhr.statusText);
+      callback('');
     }
-  }
+  };
   xhr.onerror = function() {
-    console.error('Request failed')
-    callback('')
-  }
-  xhr.send()
+    console.error('Request failed');
+    callback('');
+  };
+  xhr.send();
 }
