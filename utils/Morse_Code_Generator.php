@@ -9,8 +9,6 @@ if ($message === null) {
     $message = "Hi! How are you?";
 }
 
-error_log("Fetched Message: " . $message); // Debugging line
-
 // Morse Code Mapping
 $morseCodeMap = [
     // Uppercase Letters
